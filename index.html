@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaborExpress - Início</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77a3d6 3px solid;
+            text-align: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+        .login-section {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 5px 4px 10px black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .login-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-section img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .login-section input[type="email"], .login-section input[type="password"], .login-section input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .login-section input[type="submit"] {
+            background: #FFB444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 5px 4px 10px black;
+            transition: background-color 0.3s;
+        }
+        .login-section input[type="submit"]:hover {
+            background: #77a3d6;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#">SaborExpress</a></h1>
+        </div>
+    </header>
+    <main class="container">
+        <section class="login-section">
+            <img src="./assets/logo2.png" alt="SaborExpress Logo" class="logo">
+            <h2>Login</h2>
+            <form action="testelogin.php" method="post">
+                <input type="email" placeholder="LOGIN (EMAIL)" id="email" name="email" required>
+                <input type="password" placeholder="SENHA" id="senha" name="senha" required>
+                <input type="submit" name="submit" value="Login">
+            </form>
+            <a href="pag2cad.php"><strong>Cadastre-se</strong></a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 SaborExpress. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
